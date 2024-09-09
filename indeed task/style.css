@@ -1,0 +1,140 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2, h3 {
+    text-align: center;
+    color: #333;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"], input[type="date"], textarea, select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button {
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Task List Styling */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #fafafa;
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+ul li strong {
+    font-size: 1.2em;
+    color: #333;
+}
+
+ul li a {
+    color: #3498db;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Filter and Form Layout */
+form select, form input {
+    width: 100%;
+}
+
+form .flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.flex > div {
+    flex-grow: 1;
+}
+
+form .flex button {
+    width: 100%;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    form .flex {
+        flex-direction: column;
+    }
+
+    form .flex > div {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    form label {
+        font-size: 0.9em;
+    }
+
+    button {
+        padding: 8px;
+    }
+
+    ul li {
+        padding: 10px;
+    }
+}
